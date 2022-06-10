@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            font-size: 24px;
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .no-wrap{
+            flex-flow: row nowrap;
+        }
+
+        .wrap{
+            flex-flow: wrap;
+        }
+        
+        .r-wrap{
+            flex-flow: wrap-reverse;
+        }
+
+        .r-nowrap{
+            flex-flow: row-reverse nowrap;
+        }
+
+        .r-reverse{
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .row-wrap{
+            flex-flow: row-reverse wrap;
+        }
+
+        .column{
+            flex-flow: column;
+        }
+
+        .r-column{
+            flex-flow: column-reverse;
+        }
+
+        /*.item:hover{
+            color: black;
+            border: 1px solid blue;
+            width: 103px;
+            height: 53px;
+            flex-flow: row;
+        }
+
+        .item{
+            animation-duration: 10s;
+            animation-name: caixa;
+        }
+
+        @keyframes caixa{
+            from{
+                height: 50px;
+                width: 100px;
+            }
+
+            to{
+                height: 53px;
+                width: 103px;
+            }
+        }*/
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <h1>row</h1>
+
+        <p>No wrap</p>
+        <div class="container row no-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p>Wrap</p>
+        <div class="container wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+        
+        <p>Wrap-reverse</p>
+        <div class="container r-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+        <p>row-reverse nowrap</p>
+        <div class="container no-wrap r-nowrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+
+        <p>row-reverse wrap</p>
+        <div class="container row-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+
+        <p>row-reverse wrap-reverse</p>
+        <div class="container r-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <h1>column</h1>
+
+        <p>column</p>
+        <div class="container column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+
+        <p>column-reverse</p>
+        <div class="container r-column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+
+
+    </section>
+</body>
+</html>
